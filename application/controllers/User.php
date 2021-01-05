@@ -32,7 +32,6 @@ class User extends CI_Controller
         $this->form_validation->set_rules('hp_telepon', 'Nomor hp/telepon', 'trim|required', ['required' => '%s harus diisi!']);
         $this->form_validation->set_rules('ktp_sim', 'Nomor KTP/SIM', 'trim|required', ['required' => '%s harus diisi!']);
 
-
         if ($this->form_validation->run() == FALSE) {
             $this->_views('templates/header', 'templates/sidebar', 'user/edit', 'templates/footer', $data);
         } else {

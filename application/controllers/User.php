@@ -9,7 +9,6 @@ class User extends CI_Controller
         check_login(get_class($this));
     }
 
-
     public function index()
     {
         $data['title'] = 'Profil';
